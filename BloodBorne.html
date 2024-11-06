@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Images/Logos/BloodBorneLogo.png" rel="shortcut icon" type="images/x-icon">
+    <title>BloodBorne</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 0, 0);
+            margin: 20px;
+        }
+
+        header {
+            background-color: rgb(51, 51, 51);
+            border-radius: 30px;
+            padding: 10px;
+            margin: 10px;
+            color: rgb(158, 158, 158);
+            box-shadow: 3px 3px 20px 0px;
+        }
+
+        h1 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h2 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h3 {
+            text-decoration-color: red;
+        }
+
+        h4 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h5 {
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            margin: 100px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(51, 51, 51);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            border-radius: 15px;
+        }
+
+        article {
+            background-color: rgb(0, 0, 0);
+            margin: 10px;
+            padding: 12px;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        article>aside {
+            background-color: rgb(37, 37, 37);
+            margin: 10px;
+            border-radius: 10px;
+            padding: 1px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 4px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .vermelho {
+            color: red;
+        }
+
+        .amarelo {
+            color: rgb(240, 227, 156)
+        }
+
+        .branco {
+            color: white;
+        }
+
+        @font-face {
+            font-family: DSFont;
+
+
+            src: url("Fontes/augusta/Augusta.ttf");
+
+        }
+
+        body {
+            font-family: 'DSFont';
+            font-size: large;
+            color: white;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .container {
+            position: relative;
+            width: 215px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        a {
+            text-decoration: none;
+            /* Remove sublinhado do link */
+            color: inherit;
+            /* Mantém a cor do texto */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1><a href="Index.html">BloodBorne</a></h1>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Sobre</h2>
+            <h3><span class="amarelo">Bloodborne, uma Imersão Sombria e Desafiante</span></h3>
+            <p>
+                Bloodborne, obra prima da FromSoftware, nos transporta para a gótica cidade de Yharnam, um lugar
+                aterrorizante e cheio de mistérios. A experiência de jogo é marcante, com uma atmosfera densa e
+                desafiadora que cativa tanto os fãs de Soulsborne quanto os novos jogadores.
+                <br>
+            <h3>
+                <span class="amarelo">
+                    Uma Imersão Sombria e Desafiante
+                </span>
+            </h3>
+            A atmosfera gótica e a trilha sonora memorável contribuem para uma imersão profunda no mundo do jogo.
+            Yharnam é um labirinto sombrio e cheio de detalhes, com áreas que se conectam de forma natural e criativa.
+            As criaturas de Bloodborne são verdadeiramente aterrorizantes e memoráveis, com designs únicos e bizarros
+            que evocam um sentimento de nojo e fascínio.
+            </p>
+            <h2>Gameplay: Uma Dança Entre a Vida e a Morte</h2>
+            <p>
+            <h3><span class="amarelo">Pontos Positivos:</span></h3>
+
+            <li><span class="amarelo">Combate Ágil e Punitivo:</span> O sistema de combate de Bloodborne é rápido,
+                exigindo que o jogador seja proativo e agressivo. A esquiva é fundamental para sobreviver aos ataques
+                dos inimigos, e a janela de oportunidade para contra-atacar é curta, recompensando jogadores com
+                reflexos rápidos.</li><br>
+            <li><span class="amarelo">Variedade de Armas e Habilidades:</span> O arsenal de Bloodborne é vasto e
+                diversificado, permitindo que os jogadores experimentem diferentes estilos de jogo. As armas
+                transformam-se, adquirindo novas propriedades e ataques especiais, incentivando a experimentação.</li>
+            <li><span class="amarelo">Níveis Desafiadores e Design de Níveis Intuitivo:</span> Os níveis de Bloodborne
+                são labirínticos e interconectados, incentivando a exploração e a descoberta. A dificuldade é elevada,
+                mas os desafios são justos e recompensadores.</li><br>
+            <li><span class="amarelo">Sistema de Progressão Interessante:</span> O sistema de progressão de Bloodborne é
+                único, permitindo que os jogadores personalizem seus personagens de acordo com seu estilo de jogo. O uso
+                de sangue para aumentar as estatísticas e adquirir novas habilidades adiciona profundidade à
+                experiência.</li>
+            </p>
+            <br>
+            <br>
+            <p>
+            <h3><span class="amarelo">Pontos Negativos:</span></h3>
+
+            <li><span class="amarelo">Curva de Aprendizado Aínda Mais Íngreme:</span> Comparado a outros jogos da
+                FromSoftware, Bloodborne apresenta uma curva de aprendizado ainda mais íngreme, especialmente para
+                jogadores novos no gênero. A agilidade e a agressividade necessárias para vencer os inimigos podem ser
+                frustrantes no início.</li><br>
+            <li><span class="amarelo">Câmara às Vezes Inconveniente:</span> A câmera, embora geralmente eficiente, pode
+                ser um obstáculo em alguns momentos, dificultando a visualização de inimigos ou de áreas importantes.
+            </li><br>
+            </p>
+            <img src="Images/Yharnam.png" alt="BL">
+            <img src="Images/Yahar'Gul.png" alt="Bl">
+            <h2>O Desenvolvimento de Bloodborne</h2>
+            <p>
+                Bloodborne é um jogo que transcende os limites do gênero Soulsborne, oferecendo uma experiência única e
+                memorável. Mas qual foi o caminho percorrido até a criação desse mundo sombrio e desafiador? Vamos
+                mergulhar nas curiosidades, desafios e influências que moldaram o desenvolvimento de Bloodborne.
+            </p>
+            <h3><span class="amarelo">Curiosidades e Acontecimentos</span></h3>
+            <li><span class="amarelo">Da Escuridão à Luz:</span> Inicialmente, Bloodborne era um projeto mais focado em
+                elementos fantásticos e mitológicos. No entanto, a equipe de desenvolvimento decidiu abraçar um visual
+                mais gótico e Lovecraftiano, o que resultou na atmosfera sombria e opressiva que conhecemos.</li><br>
+            <li><span class="amarelo">Um Novo Motor Gráfico:</span> Para dar vida ao mundo de Yharnam, a FromSoftware
+                desenvolveu um novo motor gráfico, o que exigiu um grande investimento de tempo e recursos. Essa
+                decisão, embora desafiadora, permitiu que a equipe criasse visuais impressionantes e efeitos de
+                iluminação que contribuíram para a imersão do jogador.</li><br>
+            <li><span class="amarelo">Influência de Demon's Souls:</span> Bloodborne foi fortemente influenciado por
+                Demon's Souls, o primeiro jogo da série Souls. Muitos elementos de gameplay, como o sistema de combate e
+                a progressão do personagem, foram adaptados e aprimorados para criar uma experiência ainda mais
+                visceral.</li><br>
+            <li><span class="amarelo">Desafios de Desenvolvimento:</span> Como todo grande projeto, o desenvolvimento de
+                Bloodborne enfrentou diversos desafios. Um dos maiores obstáculos foi encontrar o equilíbrio perfeito
+                entre a dificuldade e a acessibilidade, garantindo que o jogo fosse desafiador sem ser frustrante.</li>
+            <h2>A Lore de Bloodborne e a Influência de Lovecraft</h2>
+            <p>
+                A lore de Bloodborne é rica e complexa, repleta de mistérios e horrores cósmicos. A influência de H.P.
+                Lovecraft é evidente em diversos aspectos do jogo:
+            </p>
+            <li><span class="amarelo">A Cidade de Yharnam:</span> Inspirada em cidades góticas europeias, Yharnam é um
+                personagem à parte na história de Bloodborne. A cidade é um labirinto de ruas estreitas e becos escuros,
+                repleta de criaturas grotescas e segredos sombrios.</li><br>
+            <li><span class="amarelo">A Doença:</span> A doença que assola Yharnam é uma metáfora para a corrupção e a
+                decadência da humanidade. A busca por uma cura para essa doença é o motor central da narrativa.</li><br>
+            <li><span class="amarelo">Os Monstros:</span> Os monstros de Bloodborne são criaturas bizarras e
+                aterrorizantes, muitas vezes inspiradas nos mitos de Cthulhu. Cada criatura representa um aspecto
+                diferente da doença e do horror cósmico.</li><br>
+            <li><span class="amarelo">Os Deuses Antigos:</span> A lore de Bloodborne faz referência a deuses antigos e
+                poderosos, que exercem uma influência sinistra sobre o mundo. Esses seres são responsáveis pela criação
+                dos monstros e pela propagação da doença.</li>
+            <h2>A influencia de LoveCraft</h2>
+            <h3><span class="amarelo">A influência de Lovecraft em Bloodborne vai além da mera inspiração visual</span>
+            </h3>
+            <p>
+                O autor norte-americano explorou temas como a loucura, o horror cósmico e a insignificância da
+                humanidade diante de forças superiores, temas que ressoam profundamente na narrativa de Bloodborne. A
+                FromSoftware conseguiu capturar a essência da obra de Lovecraft e transformá-la em uma experiência de
+                jogo única e memorável.</p>
+            <img src="Images/TheReborneOne.png" alt="BL">
+            <img src="Images/Amygdala.png" alt="BL">
+            <br>
+            <br>
+            <h3><span class="vermelho">Videos sobre</span></h3>
+            <p>
+                Aqui estarão alguns videos sobre o jogo caso tenha se entereçado:
+            <h3><span class="vermelho">Lore do jogo</span></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KiYCMgwQpZs?si=BetLIGcz1Ry3JJrZ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3><span class="vermelho">Bosses</span></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EDxyKksT45A?si=YHp6H5aQte81bc8Y"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3><span class="vermelho">Finais</span></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/S-pa95RtgFk?si=5AY7ymdidEWRkBCz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+            <h3>Explicação dos finais</h3><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U4JrzxrfJ-E?si=LGaMvb0XO7zQiRn0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
+            <h3><span class="vermelho">Caso querira comprar</span></h3>
+            <p>
+                Infelizmente, BloodBorne é um exclusivo da playstation o tornando impossivel de jogar no PC ou em outros
+                consoles, no PC ainda a esperança pois o jogo pode ser relançado com ja aconteceu com outros exclusivos
+                como God of War e <a href="Ghost of Tsushima.html"><span class="vermelho">Ghost of Tsushima</span></a>.
+                Mas caso tenha um playstation e deseja comprar os links para o jogo base e a versão com a dlc estão logo
+                a baixo
+            </p>
+            <div class="gallery">
+                <a href="https://store.playstation.com/en-gb/concept/200520" target="_blank">
+                    <div class="container">
+                        <img src="Images/Bloodborne_capa.pnh.png" alt="Dark Souls" class="image">
+                        <div class="overlay">BloodBorne</div>
+                    </div>
+                </a>
+                <a href="https://store.playstation.com/en-us/product/UP9000-CUSA00900_00-BLOODBORNECOMPLE"
+                    target="_blank">
+                    <div class="container">
+                        <img src="Images/BloodBorneCE.png" alt="Dark Souls" class="image">
+                        <div class="overlay">BloodBorne Complete Edition</div>
+                    </div>
+                </a>
+                <a href="https://store.playstation.com/en-lb/product/EP9000-CUSA00207_00-SPEXPANSIONDLC03"
+                    target="_blank">
+                    <div class="container">
+                        <img src="Images/BloodBorneOldHunters.png" alt="Dark Souls" class="image">
+                        <div class="overlay">BloodBorne Old Hunters DLC</div>
+                    </div>
+                </a>
+            </div>
+            <aside>
+                Aritigo by Shdw
+            </aside>
+            <span class="vermelho">
+                <h5><a href="Pagina-2.html">Voltar</a></h5>
+            </span>
+        </article>
+    </main>
+    <br>
+    <br>
+</body>
+
+</html>

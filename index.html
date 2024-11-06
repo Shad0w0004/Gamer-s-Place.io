@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Images/Logos/Logo.png" rel="shortcut icon" type="images/x-icon">
+    <title>Gamer's Place</title>
+    <style>
+        /* Estilo do corpo da página */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(238, 238, 238);
+            margin: 20px;
+        }
+
+        /* Tela de loading */
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeOut 3s forwards; /* Desaparece após 5 segundos */
+            z-index: 1000;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Animações */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+
+        /* Estilos gerais da página */
+        h1, h2, h3, h4 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h5 { font-size: 20px; text-align: center; }
+
+        nav {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            margin: 100px;
+        }
+
+        nav>a:hover { text-decoration: underline; }
+
+        article {
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        article>aside {
+            background-color: rgb(175, 173, 173);
+            margin: 10px;
+            border-radius: 10px;
+            padding: 1px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 4px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: color 0.3s ease;
+        }
+
+        a:hover { color: rgb(4, 0, 255); }
+
+        .vermelho { color: red; }
+        .preto { color: rgb(0, 0, 0); }
+
+        /* Estilo da galeria */
+        .gallery { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+
+        .container {
+            position: relative;
+            width: 215px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .container:hover { transform: scale(1.05); }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        .container:hover .overlay { opacity: 1; }
+
+        #imagem {
+            display: none;
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #imagem.show {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tela de loading -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <nav>
+            <h1><a href="Index.html">Gamer's Place</a></h1>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <a id="imagem" href="Macaco.html" target="_blank">
+                    <img src="Images/MACACO.png" alt="macaco" />
+                </a>
+                <h2>Sobre</h2>
+                <p>Bem-vindo ao nosso site de vendas de jogos! Aqui, nós nos dedicamos a trazer para você o melhor do
+                    mundo dos jogos, com uma seleção cuidadosamente escolhida de títulos interessantes, promoções
+                    imperdíveis e informações sobre os melhores lugares para comprar mídia física na cidade.</p>
+                <h5><span class="preto">Nossa Missão</span></h5>
+                <p>Nosso objetivo é proporcionar aos gamers uma experiência completa e satisfatória...</p>
+                <h5><span class="preto">O Que Oferecemos</span></h5>
+                <p><b>Seleção de Jogos:</b> Descubra uma variedade de jogos...</p>
+                <h5><span class="preto">Nossa Paixão</span></h5>
+                <p>Somos apaixonados por jogos e entendemos a importância de cada título...</p>
+            </section>
+            <nav>
+                <div class="gallery">
+                    <a href="Pagina-2.html">
+                        <div class="container">
+                            <img src="Images/idea.jpg" alt="idea" class="image">
+                            <div class="overlay">Jogos que recomendamos</div>
+                        </div>
+                    </a>
+                    <a href="Pagina-3.html">
+                        <div class="container">
+                            <img src="Images/console.jpg" alt="Console" class="image">
+                            <div class="overlay">Recomendações por genero</div>
+                        </div>
+                    </a>
+                    <a href="pagina-4.html">
+                        <div class="container">
+                            <img src="Images/Maps.jpg" alt="Maps" class="image">
+                            <div class="overlay">Lojas para midia fisica</div>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </article>
+    </main>
+    <footer>
+        <p>Site by ©Luiz Henrique</p>
+    </footer>
+
+    <script>
+        const imagem = document.getElementById('imagem');
+        let userInput = '';
+
+        // Verificar entrada do usuário para exibir a imagem oculta
+        document.addEventListener('keydown', (event) => {
+            if (event.key.length === 1 || event.key === 'Backspace') {
+                if (event.key === 'Backspace') {
+                    userInput = userInput.slice(0, -1);
+                } else {
+                    userInput += event.key;
+                }
+
+                if (userInput.toLowerCase().includes('macaco')) {
+                    imagem.classList.add('show');
+                } else {
+                    imagem.classList.remove('show');
+                }
+            }
+        });
+
+        // Esconde a tela de loading após 5 segundos
+        setTimeout(() => {
+            document.querySelector('.loader-container').style.display = 'none';
+        }, 5000);
+    </script>
+</body>
+
+</html>

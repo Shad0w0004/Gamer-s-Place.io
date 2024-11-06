@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Images/Logos/GhostOfTsushimaLogo.png" rel="shortcut icon" type="images/x-icon">
+    <title>Ghost of Tsushima</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+        }
+
+        header {
+            background-color: rgb(245, 255, 112);
+            border-radius: 30px;
+            padding: 10px;
+            margin: 10px;
+            color: rgb(0, 0, 0);
+            box-shadow: 3px 3px 20px 0px;
+        }
+
+        h1 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h2 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h3 {
+            text-decoration-color: red;
+        }
+
+        h4 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h5 {
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            margin: 100px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(245, 255, 112);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            border-radius: 15px;
+        }
+
+        article {
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 12px;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        article>aside {
+            background-color: rgb(245, 255, 112);
+            margin: 10px;
+            border-radius: 10px;
+            padding: 1px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 4px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .vermelho {
+            color: red;
+        }
+
+        .amarelo {
+            color: rgb(240, 227, 156)
+        }
+
+        .branco {
+            color: white;
+        }
+
+        @font-face {
+            font-family: DSFont;
+
+
+            src: url("Fontes/tsushima/Tsushima.otf");
+
+        }
+
+        body {
+            font-family: 'DSFont';
+            font-size: large;
+            color: rgb(0, 0, 0);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .container {
+            position: relative;
+            width: 215px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        a {
+            text-decoration: none;
+            /* Remove sublinhado do link */
+            color: inherit;
+            /* Mantém a cor do texto */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1><a href="Index.html">Ghost of Tsushima</a></h1>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Sobre</h2>
+            <p>
+                Ghost of Tsushima e uma imersão epica no Japao feudal, onde acompanhamos Jin Sakai, um samurai
+                tradicional que precisa abandonar suas crencas para proteger sua ilha natal da invasao mongol. A
+                narrativa emocionante, o mundo aberto vibrante e a jogabilidade envolvente transformaram o jogo em um
+                dos maiores sucessos do PlayStation 4.
+            </p>
+            <h2>Jogabilidade: Uma danca entre a honra e a sombra</h2>
+            <p>
+                A jogabilidade de Ghost of Tsushima oferece uma experiencia rica e personalizavel. A mecânica de combate
+                e precisa e gratificante, permitindo que o jogador escolha entre um estilo de luta tradicional de
+                samurai, com espadas e bloqueios, ou um estilo mais furtivo, utilizando flechas e armadilhas.
+            </p>
+            <br>
+            <h3>Pontos Positivos:</h3>
+            <li>Mundo aberto: A ilha de Tsushima e exuberante e repleta de detalhes, convidando a exploracao e
+                oferecendo diversas atividades secundarias.</li><br>
+            <li>Sistema de combate: A variedade de posturas e tecnicas, combinada com a possibilidade de personalizar o
+                arsenal de Jin, torna as lutas dinâmicas e desafiadoras.</li><br>
+            <li>Direcao artistica: O jogo apresenta um visual deslumbrante, com paisagens inspiradas em pinturas
+                japonesas e uma paleta de cores que evoca a beleza e a melancolia do Japao feudal.</li><br>
+            <li>Historia: A narrativa e envolvente e repleta de momentos emocionantes, com personagens carismaticos e
+                dialogos bem escritos.</li><br>
+            <h3>Pontos negativos:</h3>
+
+            <li>Repetitividade: Algumas missoes secundarias podem se tornar repetitivas, especialmente no que diz
+                respeito a libertacao de prisioneiros e a destruicao de acampamentos inimigos.</li><br>
+            <li>IA: A inteligencia artificial dos inimigos, embora competente em algumas situacoes, pode ser previsivel
+                em outras.</li>
+            <h2>Curiosidades sobre o desenvolvimento</h2>
+            <p>
+                <img src="Images/PaisagemGt.png" alt="GoT">
+                <img src="Images/PaisagemGt2.png" alt="GoT">
+                <li>Inspiracao: Os desenvolvedores da Sucker Punch Productions realizaram diversas viagens ao Japao para
+                    pesquisar a cultura samurai e a historia da invasao mongol, buscando autenticidade em todos os
+                    detalhes do jogo.</li><br>
+                <li>Modo fotografia: O modo fotografia de Ghost of Tsushima se tornou um sucesso instantaneo, permitindo
+                    que os jogadores capturassem imagens deslumbrantes do mundo do jogo e compartilhassem suas criacoes
+                    nas redes sociais.</li><br>
+                <li>Legends: O modo multiplayer cooperativo, Legends, adicionou uma nova dimensao ao jogo, permitindo
+                    que os jogadores enfrentassem hordas de inimigos e criaturas miticas.</li>
+            </p>
+            <h2>A lore de Ghost of Tsushima</h2>
+            <p>
+                A lore de Ghost of Tsushima e profundamente enraizada na cultura japonesa, combinando elementos
+                historicos e mitologicos. A jornada de Jin Sakai o leva a explorar templos antigos, descobrir artefatos
+                sagrados e confrontar criaturas sobrenaturais, como os Oni. A mitologia do jogo serve como um pano de
+                fundo rico para a historia principal, adicionando profundidade e significado as acoes do protagonista.
+            </p>
+            <img src="Images/PaisagemGt3.png" alt="GoT">
+            <img src="Images/PaisagemGt4.png" alt="GoT">
+            <h3><span class="vermelho">Videos a respeito</span></h3>
+            <p>
+                Aqui lista alguns videos sobre o jogo caso tenha se enterecado:
+            <h3><span class="vermelho">Lore do jogo</span></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c0TeJ7xcEZk?si=0Sw7ObJgtTKW3m0V"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Historia Real</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/11Y_Q1w-d_E?si=MB7Sn86RqTnBtHa9"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3><span class="vermelho">Bosses</span></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-GnKdH8Vtz4?si=RfpZrzm1KbjrE160"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
+            <h3>
+                <span class="vermelho">Caso Queira comprar</span>
+            </h3>
+            <p>
+                Caso deseje comprar o jogo aqui as principais plataformas onde o jogo se encontra disponivel
+            </p>
+            <div class="gallery">
+                <a href="https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_VERSAO_DO_DIRETOR/"
+                    target="_blank">
+                    <div class="container">
+                        <img src="Images/GhostOfTsushimaDC.png" alt="GoT" class="image">
+                        <div class="overlay">Steam</div>
+                    </div>
+                </a>
+                <a href="https://www.playstation.com/en-us/games/ghost-of-tsushima/" target="_blank">
+                    <div class="container">
+                        <img src="Images/GhostOfTsushimaPlayStation.png" alt="Dark Souls" class="image">
+                        <div class="overlay">PlayStation</div>
+                    </div>
+                </a>
+                <a href="https://store.epicgames.com/en-US/p/ghost-of-tsushima" target="_blank">
+                    <div class="container">
+                        <img src="Images/GhostOfTsushima.png" alt="Dark Souls" class="image">
+                        <div class="overlay">EpicGames</div>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <aside>
+                Artigo by Shdw
+            </aside>
+            <span class="vermelho">
+                <h5><a href="Pagina-2.html">Voltar</a></h5>
+            </span>
+        </article>
+    </main>
+</body>
+
+</html>

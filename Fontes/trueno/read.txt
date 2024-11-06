@@ -1,0 +1,5 @@
+This is a Fork from the Open Source font, Montserrat, licensed under the SIL Open Font License, with several new styles.
+
+Forked by our newest designer, Jasper.
+
+Update: version 3.001b. Adds New UltraBlack weight plus matching italic, improved file sizes, minor fixes in font information sections of all weights.

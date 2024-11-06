@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Images/Logos/Logo.png" rel="shortcut icon" type="images/x-icon">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_GOOGLE_MAPS_API&callback=initMap" async
+        defer></script>
+    <title>Busca por midia fisica</title>
+    <style>
+        /* Estilo do corpo da página */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(238, 238, 238);
+            margin: 20px;
+        }
+
+        /* Tela de loading */
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeOut 3s forwards; /* Desaparece após 5 segundos */
+            z-index: 1000;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Animações */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+
+        /* Estilos gerais da página */
+        h1, h2, h3, h4 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h5 { font-size: 20px; text-align: center; }
+
+        nav {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            margin: 100px;
+        }
+
+        nav>a:hover { text-decoration: underline; }
+
+        article {
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        article>aside {
+            background-color: rgb(175, 173, 173);
+            margin: 10px;
+            border-radius: 10px;
+            padding: 1px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 4px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: color 0.3s ease;
+        }
+
+        a:hover { color: rgb(4, 0, 255); }
+
+        .vermelho { color: red; }
+        .preto { color: rgb(0, 0, 0); }
+
+        /* Estilo da galeria */
+        .gallery { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+
+        .container {
+            position: relative;
+            width: 215px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .container:hover { transform: scale(1.05); }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        .container:hover .overlay { opacity: 1; }
+
+        #imagem {
+            display: none;
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #imagem.show {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tela de loading -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav>
+        <h1><a href="Index.html">Gamer's Place</a></h1>
+        </nav>
+    </header>
+    <main>
+        <nav>
+            <h5>Encontre Jogos Físicos</h5>
+            <div class="search-section">
+                <input type="text" id="game-input" placeholder="Digite o nome do jogo" />
+                <select id="state-input">
+                    <option value="">Selecione o estado</option>
+                </select>
+                <select id="city-input">
+                    <option value="">Selecione a cidade</option>
+                </select>
+                <button id="search-btn">Pesquisar</button>
+            </div>
+            <div id="results">
+                <h5>Resultados da Busca</h5>
+                <ul id="store-list"></ul>
+            </div>
+            <div id="map"></div>
+            
+            <script src="script2.js"></script>
+            
+            <a id="imagem" href="" target="_blank">
+                <video src="Images/WhatsApp Video 2024-06-11 at 07.45.30.mp4" controls="false" muted width="750"
+                height="400" autoplay="true" loop="true" playsinline style="pointer-events: none;">
+            </video>
+            <img src="" alt="" />
+            <div>
+                <h3>Outras paginas</h3>
+                <div class="gallery">
+                <a href="Pagina-2.html">
+                    <div class="container">
+                        <img src="Images/Maps.jpg" alt="maps" class="image">
+                        <div class="overlay">Jogos que recomendamos</div>
+                    </div>
+                </a>
+                    <a href="Pagina-3.html">
+                        <div class="container">
+                            <img src="Images/console.jpg" alt="Console" class="image">
+                            <div class="overlay">Recomendações por genero</div>
+                        </div>
+                    </a>
+                    <a href="index.html">
+                        <div class="container">
+                            <img src="Images/Retun.png" alt="maps" class="image">
+                            <div class="overlay">Voltar a pagina inicial</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </main>
+    <footer>
+        <p>Site by ©Luiz Henrique</p>
+    </footer>
+            <script>
+                const imagem = document.getElementById('imagem');
+                let userInput = '';
+        
+                document.addEventListener('keydown', (event) => {
+                    // Verifica se a tecla pressionada é uma letra ou espaço
+                    if (event.key.length === 1 || event.key === 'Backspace') {
+                        if (event.key === 'Backspace') {
+                            userInput = userInput.slice(0, -1); // Remove o último caractere se Backspace for pressionado
+                        } else {
+                            userInput += event.key; // Adiciona o caractere digitado
+                        }
+        
+                        // Verifica se a palavra "macaco" foi digitada
+                        if (userInput.toLowerCase().includes('otaku')) {
+                            imagem.classList.add('show'); // Adiciona a classe que mostra a imagem
+                        } else {
+                            imagem.classList.remove('show'); // Remove a classe que mostra a imagem
+                        }
+                    }
+                });
+            </script>
+</body>
+
+</html>

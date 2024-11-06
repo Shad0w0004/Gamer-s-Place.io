@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Images/Logos/Dark Souls Logo.png" rel="shortcut icon" type="images/x-icon">
+    <title>Dark Souls</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 0, 0);
+            margin: 20px;
+        }
+
+        header {
+            background-color: rgb(122, 10, 10);
+            border-radius: 30px;
+            padding: 10px;
+            margin: 10px;
+            color: rgb(122, 10, 10);
+            box-shadow: 3px 3px 20px 0px;
+        }
+
+        h1 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h2 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h3 {
+            text-decoration-color: red;
+        }
+
+        h4 {
+            text-align: center;
+            box-shadow: inset 0px -4px 0px 0px;
+        }
+
+        h5 {
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            margin: 100px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(122, 10, 10);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            border-radius: 15px;
+        }
+
+        article {
+            background-color: rgb(0, 0, 0);
+            margin: 10px;
+            padding: 12px;
+            text-align: center;
+
+        }
+
+        article>aside {
+            background-color: rgb(37, 37, 37);
+            margin: 10px;
+            border-radius: 10px;
+            padding: 1px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            padding: 4px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .vermelho {
+            color: red;
+        }
+
+        .branco {
+            color: white;
+        }
+
+        @font-face {
+            font-family: DSFont;
+
+
+            src: url("Fontes/optimusprinceps/OptimusPrincepsSemiBold.ttf");
+
+        }
+
+        body {
+            font-family: 'DSFont';
+            font-size: large;
+            color: white;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .container {
+            position: relative;
+            width: 215px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        a {
+            text-decoration: none;
+            /* Remove sublinhado do link */
+            color: inherit;
+            /* Mantém a cor do texto */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1><a href="Index.html">Dark Souls</a></h1>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Sobre</h2>
+            </div>
+            <text>
+                <p>Dark Souls é uma série de jogos de ação e RPG desenvolvida pela FromSoftware e publicada pela Bandai
+                    Namco Entertainment. A série é conhecida por sua dificuldade desafiadora, seu design de mundo
+                    interconectado e sua narrativa profunda e enigmática.<br>
+                <h2><b>Dark Souls (2011)</b></h2>
+                O primeiro jogo da série, lançado em 2011, coloca os jogadores no papel de um Undead, um ser amaldiçoado
+                destinado a morrer e renascer indefinidamente. Os jogadores exploram o reino de Lordran, enfrentando
+                inimigos formidáveis e chefes colossais enquanto tentam descobrir a verdade por trás da maldição dos
+                Undead e da era das trevas iminente.<br>
+                <p>Gameplay:<br>
+                    Dark Souls 1 é aclamado por seu design de mundo interconectado, que permite uma exploração fluida e
+                    significativa. A dificuldade desafiadora e o combate metódico são pontos fortes, exigindo dos
+                    jogadores paciência e estratégia. Cada encontro com inimigos e chefes requer atenção ao timing e ao
+                    uso eficiente dos recursos. O sistema de fogueiras, que serve como pontos de controle, adiciona uma
+                    camada de estratégia, pois reviver inimigos derrotados ao descansar aumenta o risco e a
+                    recompensa.<br>
+
+                    Aspectos Técnicos:<br>
+                    Os gráficos do jogo, apesar de não serem tecnologicamente avançados para a época, são notáveis por
+                    seu design artístico gótico e atmosférico. A trilha sonora de Motoi Sakuraba realça momentos
+                    cruciais, especialmente nas batalhas contra chefes. No entanto, a versão para PC sofreu críticas
+                    devido à má otimização, necessitando de mods da comunidade para corrigir problemas de performance e
+                    resolução.<br>
+                    <br>
+                    Pontos Positivos:<br>
+
+                    <li>Mundo interconectado e envolvente.</li>
+                    <li>Combate desafiador e satisfatório.</li>
+                    <li>Atmosfera sombria e trilha sonora impactante.</li><br>
+                    Pontos Negativos:<br>
+                    <br>
+                    <li>Versão para PC com problemas de otimização.</li>
+                    <li>Dificuldade elevada pode afastar jogadores mais casuais.</li>
+                </p>
+                <img src="Images/Anor.png" alt="img"> <img src="Images/Firelink.png" alt="img">
+                <span class="vermelho">
+                    <h3>Caso queira saber mais</h3>
+                </span>
+                <p>Caso queira saber mais sobre o jogo assista o video a baixo</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rnv4g3G6bLE?si=ltN4_licrng-ed01"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <span class="vermelho">
+                    <h3>Jogo em lojas digitais</h3>
+                </span>
+                <p>Aqui as proncipais lojas digitais caso tenha se enteresado em comprar</p>
+                <div class="gallery">
+                    <a href="https://www.nintendo.com/pt-br/store/products/dark-souls-remastered-switch/?srsltid=AfmBOorcHiiSzTWRexJa9QOgr_C7a_4TdQGJVAN38Tbar6trlVdYG1sp"
+                        target="_blank">
+                        <div class="container">
+                            <img src="Images/DS1switch.png" alt="Imagem 1" class="image">
+                            <div class="overlay">Nintendo Switch</div>
+                        </div>
+                    </a>
+                    <a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/" target="_blank">
+                        <div class="container">
+                            <img src="Images/DS1.png" alt="Imagem 2" class="image">
+                            <div class="overlay">Steam</div>
+                        </div>
+                    </a>
+                    <a href="https://www.xbox.com/pt-BR/games/store/dark-souls-remastered/BS18VCF4NLQ9" target="_blank">
+                        <div class="container">
+                            <img src="Images/DS1xbox.png" alt="Imagem 3" class="image">
+                            <div class="overlay">Xbox</div>
+                        </div>
+                    </a>
+                    <a href="https://store.playstation.com/pt-br/product/UP0700-CUSA08692_00-DARKSOULSHD00000"
+                        target="_blank">
+                        <div class="container">
+                            <img src="Images/DS1ps.png" alt="Imagem 4" class="image">
+                            <div class="overlay">Playstation</div>
+                        </div>
+                    </a>
+                </div>
+                <h2><b>Dark Souls II (2014)</b></h2>
+                Lançado em 2014, Dark Souls II não é uma sequência direta, mas mantém a essência de seu predecessor. O
+                jogo se passa no reino de Drangleic e apresenta um novo protagonista amaldiçoado em busca de uma cura.
+                Dark Souls II expandiu a jogabilidade com novos sistemas de combate e uma variedade maior de ambientes e
+                inimigos.<br>
+                <br>
+                Gameplay:<br>
+                Dark Souls 2 oferece uma experiência semelhante ao primeiro jogo, mas com algumas mudanças notáveis. O
+                combate permanece focado em estratégia e gestão de stamina, mas a introdução de um sistema de
+                "Adaptability" afeta o timing de esquivas, o que foi uma decisão controversa. O jogo expande o conteúdo,
+                oferecendo mais áreas, inimigos e chefes, mas o design de níveis é considerado menos coeso e
+                interconectado em comparação ao primeiro jogo.<br>
+
+                Aspectos Técnicos:<br>
+                Dark Souls 2 apresenta melhorias gráficas em relação ao seu antecessor, mas o jogo foi criticado por uma
+                iluminação inferior àquela mostrada nos trailers de pré-lançamento. A versão para PC, "Scholar of the
+                First Sin", introduziu melhorias gráficas e mudanças no posicionamento de inimigos, oferecendo uma
+                experiência mais polida.<br>
+                <br>
+                Pontos Positivos:<br>
+
+                <il>Variedade de conteúdo com muitas áreas e chefes.</il>
+                <li>Melhorias gráficas em relação ao primeiro jogo.</li>
+                <li>Versão "Scholar of the First Sin" melhora a experiência geral.</li><br>
+                <br>
+                Pontos Negativos:<br>
+
+                <li>Design de níveis menos coeso.</li>
+                <li>Sistema de "Adaptability" e mudanças no combate foram controversos.</li>
+                <li>Iluminação e gráficos abaixo do esperado em algumas versões.</li>
+                <br>
+                <img src="Images/DS2_ironkeep.png" alt="DS2"> <img src="Images/DS2_majula.png" alt="DS2">
+                <span class="vermelho">
+                    <h3>Aviso</h3>
+                </span>
+                <p>
+                    A gameplay é mais dificil comparada aos outros dois jogos da franquia, devido a nâo ter sido feito
+                    pelo Miyazaki pois na epoca ele estava a trabalhar na DLC que traria o Artorias ao DS1 e logo apos
+                    ele comecou a trabalhar em Bloodborne, caso queira saber mais sobre o porque o Miyazaki não
+                    trabalhou em Dark Souls II clique <span class="vermelho"><a
+                            href="https://www.tecmundo.com.br/voxel/287142-dark-souls-2-considerado-pior-serie-souls-especial-voxel.htm"
+                            target="_blank">aqui</a></span>
+                    <br>
+                    Uns dos principais motivos para o jogo ser mais dificil do que os outros dois jogos da franquia é a
+                    alta quantidade de inimigos por area, e os frames de invencibilidade serem um atributo escalavel,
+                    comecando em 5 frames e podendo subir ate 15 frames.
+                    <br>
+                    Caso queira saber mais sobre isso assista o video a baixo onde esse assunto é melhor explicado
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KDLinFNpzWM?si=NwUPw7tQGzGJ5-_9"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <span class="vermelho">
+                    <h3>Caso ainda queira comprar</h3>
+                </span>
+                <p>Aqui as principais lojas digitais onde o jogo se encontra disponiovel</p>
+                <div class="gallery">
+                    <a href="https://store.steampowered.com/app/236430/DARK_SOULS_II/" target="_blank">
+                        <div class="container">
+                            <img src="Images/DS2_steam.png" alt="Imagem 1" class="image">
+                            <div class="overlay">Steam</div>
+                        </div>
+                    </a>
+                    <a href="https://store.playstation.com/pt-br/product/UP0700-CUSA01760_00-DARKSOULS2000003/"
+                        target="_blank">
+                        <div class="container">
+                            <img src="Images/DS2_ps.png" alt="Imagem 2" class="image">
+                            <div class="overlay">Playstation</div>
+                        </div>
+                    </a>
+                    <a href="https://www.xbox.com/pt-BR/games/store/dark-souls-ii-scholar-of-the-first-sin/BVBQ72FDB4LK"
+                        target="_blank">
+                        <div class="container">
+                            <img src="Images/DS2_xbox.png" alt="Imagem 3" class="image">
+                            <div class="overlay">Xbox</div>
+                        </div>
+                    </a>
+                </div>
+                <h2><b>Dark Souls III (2016)</b></h2>
+                Dark Souls III, lançado em 2016, conclui a trilogia com uma combinação dos melhores elementos de seus
+                predecessores. O jogo se passa em Lothric e explora o conceito do ciclo de luz e escuridão, onde os
+                jogadores assumem o papel do Unkindled, um guerreiro revivido com a missão de unir as Cinzas dos Lordes
+                para prevenir a extinção da chama que mantém o mundo em equilíbrio.<br>
+                <p>
+                    Gameplay:<br>
+                    Dark Souls 3 combina elementos dos jogos anteriores com uma jogabilidade mais rápida e responsiva. O
+                    combate é mais ágil, com influência da série Bloodborne, o que oferece uma experiência mais
+                    dinâmica. O design de níveis é mais linear, mas ainda possui áreas interconectadas e repletas de
+                    segredos. Os chefes são variados e desafiadores, com alguns dos mais memoráveis da série.<br>
+
+                    Aspectos Técnicos:<br>
+                    Dark Souls 3 é tecnicamente superior aos seus antecessores, com gráficos mais detalhados e uma
+                    performance mais estável, especialmente na versão para PC. A atmosfera gótica e decadente é
+                    reforçada por uma trilha sonora imersiva. No entanto, alguns jogadores criticaram a linearidade
+                    maior em comparação ao primeiro jogo e a reutilização de certos elementos e ideias.<br>
+                    <br>
+                    Pontos Positivos:<br>
+                    <br>
+                    <li>Combate mais ágil e dinâmico.</li>
+                    <li>Gráficos e performance aprimorados.</li>
+                    <li>Chefes memoráveis e desafiadores.</li><br>
+                    <br>
+                    Pontos Negativos:<br>
+                    <br>
+
+                    <li>Design de níveis mais linear que Dark Souls 1.</li>
+                    <li>Reutilização de elementos de jogos anteriores.</li>
+                    <li>Menor sensação de exploração em mundo interconectado.</li>
+                </p>
+                <img src="Images/Irithyll.jpg" alt="DS3">
+                <img src="Images/FirelinkDS3.png" alt="DS3">
+
+                <span class="vermelho">
+                    <h3>Caso queira saber mais</h3>
+                </span>
+                <p>
+                    caso queira saber mais sobre o jogo assista o video abaixo
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YtynkZFZPKU?si=sU4oZcjQG5NBROzP"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+                <span class="vermelho">
+                    <h3>Caso queira comprar</h3>
+                </span>
+                <p>
+                    Caso queira comprar aqui as lojas onde o jogo se encontra disponiovel
+                </p>
+                <div class="gallery">
+                    <a href="https://store.steampowered.com/app/374320/DARK_SOULS_III/" target="_blank">
+                        <div class="container">
+                            <img src="Images/DS3_steam.png" alt="Imagem 1" class="image">
+                            <div class="overlay">Steam</div>
+                        </div>
+                    </a>
+                    <a href="https://store.playstation.com/pt-br/product/UP0700-CUSA03388_00-DARKSOULS3000000"
+                        target="_blank">
+                        <div class="container">
+                            <img src="Images/DS3_playstation.png" alt="Imagem 2" class="image">
+                            <div class="overlay">Playstation</div>
+                        </div>
+                    </a>
+                    <a href="https://www.xbox.com/pt-BR/games/store/dark-souls-iii/BW2XDRNSCCPZ" target="_blank">
+                        <div class="container">
+                            <img src="Images/DS3_xbox.png" alt="Imagem 3" class="image">
+                            <div class="overlay">Xbox</div>
+                        </div>
+                    </a>
+                </div>
+                <h2>Características Comuns</h2><br>
+                <br>
+                <b>Dificuldade Desafiadora:</b> Cada jogo é conhecido por sua dificuldade intensa, onde a paciência, a
+                estratégia e a habilidade são essenciais para progredir.<br>
+                <br>
+                <b>Design de Mundo Interconectado:</b> Os mundos de Dark Souls são meticulosamente projetados, com áreas
+                interligadas e atalhos escondidos, incentivando a exploração.<br>
+                <br>
+                <b>Narrativa Ambígua:</b> A história é contada de maneira fragmentada, através de descrições de itens,
+                diálogos enigmáticos e cenários, exigindo que os jogadores montem o enredo por conta própria.<br>
+                <br>
+                <b>Multiplayer Assimétrico:</b> Os jogos apresentam mecânicas online únicas, permitindo invasões de
+                outros jogadores e cooperação em tempo real.</p>
+
+                <span class="vermelho">
+                    <h3>Curiosidades</h3>
+                </span>
+                <p>
+                    Dark Souls 1 não foi o primeiro jogo da serie Souls, o primeiro sendo o Demon Souls lançado em 2009
+                    tendo um remaster em 2020
+                </p>
+                <span class="vermelho">
+                    <p>Aqui alguns videos de comparação</p>
+                </span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RXVEhFfuST0?si=9fMBtazU3g1qfiSd"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lsa5AFsM5J4?si=mXogUPM8FQ5TxL0z"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <span class="vermelho">
+                    <p>No hit runs</p>
+                </span>
+                <p>
+                    uma <span class="vermelho"><b>run no hit</b></span> é basicamente jogar do começo ao fim de um jogo
+                    sem tomar dano, o que em Dark Souls é uma tarefa extremamente dificil exigondo horas de dedicação,
+                    caso queira ver como seria essa run o youtuber brasilero <span class="vermelho"><a
+                            href="https://www.youtube.com/@TATICADS" target="_blank">taticads</a></span> zerou os tres
+                    jogos da serie Souls sem elvar dano
+                </p>
+                <span class="vermelho">
+                    <p>aqui os videos caso queira assistir</p>
+                </span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JfTxJRgss34?si=nt1BJ8BXNR-t1vuY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uqPstI8kgdA?si=klNU0qj91swlMfnd"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y_Hm5s0eWAQ?si=peX0D5TKir4nE_vt"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </text>
+            <aside>
+                <p>Artigo by Shdw</p>
+            </aside>
+            <span class="vermelho">
+                <h5><a href="Pagina-2.html">Voltar</a></h5>
+            </span>
+        </article>
+    </main>
+</body>
+
+</html>
